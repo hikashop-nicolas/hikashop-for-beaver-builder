@@ -1,0 +1,5 @@
+/* Theme image rules can stretch HikaShop's gallery thumbnails; give them their own size back */
+.fl-module img.hikashop_child_image {
+	height: 30px;
+	width: auto;
+}

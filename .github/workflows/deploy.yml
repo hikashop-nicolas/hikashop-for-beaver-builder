@@ -1,0 +1,46 @@
+name: Deploy to WordPress.org
+
+on:
+  push:
+    tags: ['*.*.*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      HAS_SVN: ${{ secrets.SVN_USERNAME != '' && secrets.SVN_PASSWORD != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Version check
+        run: |
+          tag="${GITHUB_REF_NAME}"
+          grep -q "Version:           ${tag}$" hikashop-for-beaver-builder.php || { echo "plugin header is not ${tag}"; exit 1; }
+          grep -q "^Stable tag: ${tag}$" readme.txt || { echo "readme Stable tag is not ${tag}"; exit 1; }
+      - name: Build
+        run: bin/build.sh
+      - name: Plugin Check
+        uses: wordpress/plugin-check-action@v1
+        with:
+          build-dir: build/hikashop-for-beaver-builder
+          include-experimental: true
+          include-low-severity-errors: true
+          include-low-severity-warnings: true
+          strict: true
+      - name: GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view "${GITHUB_REF_NAME}" >/dev/null 2>&1 \
+            || gh release create "${GITHUB_REF_NAME}" build/hikashop-for-beaver-builder.zip --title "${GITHUB_REF_NAME}" --notes "See the changelog in readme.txt."
+      - name: Deploy to the WordPress.org SVN
+        if: env.HAS_SVN == 'true'
+        uses: 10up/action-wordpress-plugin-deploy@stable
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SLUG: hikashop-for-beaver-builder
+          ASSETS_DIR: .wordpress-org
