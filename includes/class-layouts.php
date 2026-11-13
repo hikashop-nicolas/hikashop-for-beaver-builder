@@ -293,8 +293,9 @@ final class Layouts {
 
 			<h2><?php esc_html_e( 'Layouts', 'hikashop-for-beaver-builder' ); ?></h2>
 			<p>
-				<a class="button" href="<?php echo esc_url( admin_url( 'post-new.php?post_type=' . self::POST_TYPE ) ); ?>"><?php esc_html_e( 'Add a layout', 'hikashop-for-beaver-builder' ); ?></a>
-				<a href="<?php echo esc_url( admin_url( 'edit.php?post_type=' . self::POST_TYPE ) ); ?>"><?php esc_html_e( 'Manage the layouts', 'hikashop-for-beaver-builder' ); ?></a>
+				<a class="button button-primary" href="<?php echo esc_url( admin_url( 'post-new.php?post_type=' . self::POST_TYPE ) ); ?>"><?php esc_html_e( 'Add a layout', 'hikashop-for-beaver-builder' ); ?></a>
+				&nbsp;
+				<a class="button" href="<?php echo esc_url( admin_url( 'edit.php?post_type=' . self::POST_TYPE ) ); ?>"><?php esc_html_e( 'Manage the layouts', 'hikashop-for-beaver-builder' ); ?></a>
 			</p>
 			<?php if ( empty( $layouts ) ) : ?>
 				<p><?php esc_html_e( 'No layout yet. Add one, then open it with Beaver Builder and place the HikaShop product modules in it.', 'hikashop-for-beaver-builder' ); ?></p>

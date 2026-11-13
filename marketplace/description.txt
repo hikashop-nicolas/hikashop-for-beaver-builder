@@ -1,0 +1,50 @@
+<div class="hikashop_product_content">
+<div id="product_features">
+	<p><b>HikaShop for Beaver Builder</b> is a free WordPress plugin that lets you design your HikaShop store with <a href="https://www.wpbeaverbuilder.com" target="_blank" rel="noopener">Beaver Builder</a>, the page builder. Product listings, category listings, every part of the product page, the cart, the wishlist, the currency switcher and the filters become Beaver Builder modules you drag into your pages, and your product pages can be shown with a layout you design in Beaver Builder. It works with the free Beaver Builder Lite: nothing in it needs the paid edition.</p>
+
+	<span class="blue_title">Features</span>
+	<ul>
+		<li><b>Products</b> module: the products of a category (with or without its subcategories), products chosen by hand in the order you give, the products on sale, the products the visitor viewed last, or the products related to the product being viewed. You choose the order, the number of products, the columns, the product layout, and whether to show the price, the add to cart button, the quantity field, the wishlist button, the rating and the badges.</li>
+		<li>A product picker that searches your catalog by name, code or id, for the products chosen by hand.</li>
+		<li><b>Categories</b> module: the subcategories of a category, with their number of products, the empty ones hidden if you want.</li>
+		<li>Fourteen product page modules: title, images, price, add to cart, description, variants, options, custom fields, specifications, dimensions, bundled products, files, rating and sharing. Place each one where you want in your product page layout.</li>
+		<li>Product page layouts, made in Settings &gt; HikaShop for Beaver Builder and designed with Beaver Builder; one of them is picked for the whole shop. While you design it, the latest product of your shop stands in, so you see real content in the builder. With the paid Beaver Builder, its saved layouts can be picked too.</li>
+		<li>The variant selectors, the add to cart, the image gallery and the links to a given variant work as on HikaShop's own product page. Unpublished products and products hidden from the visitor's user group or language keep HikaShop's own answer.</li>
+		<li><b>Cart</b>, <b>Wishlist</b>, <b>Currency switcher</b> and <b>Filters</b> modules: HikaShop's own modules, with their full settings one click away from the Beaver Builder settings.</li>
+		<li>A style tab on each module (colors, typography, alignment), on top of HikaShop's own CSS.</li>
+		<li>Nothing of the shop is redone: prices, taxes, discounts, stock, access rights, the cart and the layout overrides of your theme apply as on HikaShop's own pages.</li>
+		<li>Open source (GPL), on <a href="https://github.com/hikashop-nicolas/hikashop-for-beaver-builder" target="_blank" rel="noopener">GitHub</a>.</li>
+	</ul>
+
+	<span class="blue_title">Preview</span>
+	<a href="/images/marketplace/bb_listing.jpg" rel="shadowbox[hikashop]"><img src="/images/marketplace/bb_listing.jpg" alt="A HikaShop product listing and its settings in Beaver Builder" style="max-width:100%; margin:10px 0; cursor:zoom-in;" /></a>
+	<a href="/images/marketplace/bb_picker.jpg" rel="shadowbox[hikashop]"><img src="/images/marketplace/bb_picker.jpg" alt="Products chosen by hand, with a search of the HikaShop catalog" style="max-width:100%; margin:10px 0; cursor:zoom-in;" /></a>
+	<a href="/images/marketplace/bb_layout.jpg" rel="shadowbox[hikashop]"><img src="/images/marketplace/bb_layout.jpg" alt="A product page layout designed in Beaver Builder, with the HikaShop modules" style="max-width:100%; margin:10px 0; cursor:zoom-in;" /></a>
+	<a href="/images/marketplace/bb_product.jpg" rel="shadowbox[hikashop]"><img src="/images/marketplace/bb_product.jpg" alt="The product page on the site, shown with the Beaver Builder layout" style="max-width:100%; margin:10px 0; cursor:zoom-in;" /></a>
+	<a href="/images/marketplace/bb_shop.jpg" rel="shadowbox[hikashop]"><img src="/images/marketplace/bb_shop.jpg" alt="A shop page built with the product and category listing modules" style="max-width:100%; margin:10px 0; cursor:zoom-in;" /></a>
+
+	<span class="blue_title">How it works</span>
+	<ul>
+		<li>1. Install and activate Beaver Builder (or Beaver Builder Lite) and HikaShop, then this plugin.</li>
+		<li>2. Open a page with Beaver Builder: the modules are in the HikaShop group of the module panel.</li>
+		<li>3. For the product pages, add a layout in Settings &gt; HikaShop for Beaver Builder, place the product modules in it with Beaver Builder, publish it, and choose it there.</li>
+	</ul>
+</div>
+<div id="product_use"><span class="blue_title">Use</span>
+	<ul>
+		<li>Free plugin, for every HikaShop edition, Starter included (the Filters module needs HikaShop Business, the edition with the filters)</li>
+		<li>Requires HikaShop 6.8.2 minimum, a package downloaded since 12 November 2026</li>
+		<li>Requires Beaver Builder 2.9 minimum, the free Beaver Builder Lite is enough</li>
+		<li>Compatible with WordPress 6.8 minimum and PHP 7.4 minimum</li>
+		<li>WordPress only (Beaver Builder does not exist on Joomla)</li>
+		<li>No time limit</li>
+		<li>Unlimited usage</li>
+	</ul>
+</div>
+<div id="changelog"><span class="blue_title">Changelog</span>
+	<p class="version">1.0.0 on the 13th of November 2026</p>
+	<ul>
+		<li>First release: product and category listings, the product page modules, the product page layouts, the cart, wishlist, currency switcher and filter modules.</li>
+	</ul>
+</div>
+</div>

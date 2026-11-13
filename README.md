@@ -1,6 +1,8 @@
-# HikaShop for Beaver Builder
+<p align="center">
+  <img src=".wordpress-org/banner-1544x500.png" alt="HikaShop for Beaver Builder" width="100%">
+</p>
 
-<p>
+<p align="center">
   <a href="https://github.com/hikashop-nicolas/hikashop-for-beaver-builder/actions/workflows/ci.yml"><img src="https://github.com/hikashop-nicolas/hikashop-for-beaver-builder/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <img src="https://img.shields.io/badge/WordPress-6.8%2B-21759b" alt="WordPress 6.8+">
   <img src="https://img.shields.io/badge/PHP-7.4%2B-777bb4" alt="PHP 7.4+">
@@ -8,9 +10,13 @@
   <img src="https://img.shields.io/badge/license-GPLv2%2B-ea580c" alt="GPLv2 or later">
 </p>
 
+# HikaShop for Beaver Builder
+
 Design a [HikaShop](https://www.hikashop.com) store with [Beaver Builder](https://www.wpbeaverbuilder.com). Product listings, category listings, every part of the product page, the cart, the wishlist, the currency switcher and the filters become Beaver Builder modules, and HikaShop product pages can be shown with a Beaver Builder layout.
 
 It works with the **free Beaver Builder Lite**: nothing here needs the paid edition.
+
+![A product listing and its settings in Beaver Builder](.wordpress-org/screenshot-1.png)
 
 ## What you get
 
@@ -27,13 +33,23 @@ Every module has a style tab (colors, typography, alignment) on top of HikaShop'
 
 The product picker searches the HikaShop catalog by name, code or id, and keeps the order you give.
 
+![Products chosen by hand, with a search of the HikaShop catalog](.wordpress-org/screenshot-2.png)
+
 ### Product pages designed in Beaver Builder
 
 Beaver Builder Lite has no saved templates, so the plugin adds its own: in *Settings > HikaShop for Beaver Builder*, add a layout, open it with Beaver Builder, lay out the product modules, publish it and pick it as the product page layout. Every HikaShop product page is then shown with it. In the builder the latest product of the shop stands in, so you see real content while you design. With the paid Beaver Builder, its saved layouts can be picked too.
 
+![A product page layout in Beaver Builder](.wordpress-org/screenshot-3.png)
+
 A layout's own address answers 404 to anyone who cannot edit it, and is never indexed.
 
 The variant selectors, the add to cart button, the image gallery and a link to a given variant (`?hikashop_char=`) behave as on HikaShop's own product page; unpublished products, products hidden from the visitor's user group or language still get HikaShop's own answer.
+
+![The product page on the site](.wordpress-org/screenshot-4.png)
+
+### A whole shop page
+
+![A shop page built with the listing modules](.wordpress-org/screenshot-5.png)
 
 ## Requirements
 
@@ -52,6 +68,8 @@ If a requirement is missing, the plugin stays inactive and says which one in the
 2. Install HikaShop for Beaver Builder from *Plugins > Add New* (once it is on WordPress.org), or upload the zip of the [latest release](https://github.com/hikashop-nicolas/hikashop-for-beaver-builder/releases).
 3. Open a page with Beaver Builder: the modules are in the HikaShop group of the module panel.
 4. For the product pages, add a layout in *Settings > HikaShop for Beaver Builder*, design it and choose it there.
+
+![The product page layout setting](.wordpress-org/screenshot-6.png)
 
 ## How it works
 
@@ -81,6 +99,8 @@ includes/modules/                 the modules
 modules/hikashop/includes/        frontend.php and frontend.css.php shared by every module
 fields/                           the product picker field template
 assets/                           builder script and CSS, frontend CSS
+.wordpress-org/                   WordPress.org icon, banners and screenshots
+marketplace/                      HikaShop marketplace texts and pictures (not in the zip)
 ```
 
 The listing, render and ajax classes are the ones of [HikaShop for Elementor](https://github.com/hikashop-nicolas/hikashop-for-elementor), under their own namespace, with the same file and method names: port a fix to both.
