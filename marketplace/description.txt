@@ -42,6 +42,10 @@
 	</ul>
 </div>
 <div id="changelog"><span class="blue_title">Changelog</span>
+	<p class="version">1.0.3 on the 22nd of November 2026</p>
+	<ul>
+		<li>First release on wordpress.org. The plugin works as in 1.0.2.</li>
+	</ul>
 	<p class="version">1.0.2 on the 16th of November 2026</p>
 	<ul>
 		<li>The scripts and styles of the HikaShop layouts shown in the modules are loaded by HikaShop itself. This needs a HikaShop 6.8.2 package downloaded since 16 November 2026; with an older one, the modules show without those scripts.</li>
