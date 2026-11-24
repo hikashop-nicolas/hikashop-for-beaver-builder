@@ -4,7 +4,7 @@ Tags: hikashop, beaver builder, ecommerce, shop, product
 Requires at least: 6.8
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -80,6 +80,9 @@ Yes, with HikaShop's layout overrides: copy the HikaShop layout file into the hi
 6. The product page layout setting.
 
 == Changelog ==
+
+= 1.0.4 =
+* The notice saying HikaShop or Beaver Builder is missing or too old shows on the Plugins page only, instead of on every admin page.
 
 = 1.0.3 =
 * First release on wordpress.org. The plugin works as in 1.0.2.
